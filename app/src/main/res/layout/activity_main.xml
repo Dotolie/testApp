@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#4CAF50"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_send_ch0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DFDEDE"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="from RS485_ch0"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_receive_ch0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#F8F7F7"
+                android:scrollbars="vertical"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_send_ch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DFDEDE"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="from RS485_ch1"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_receive_ch1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#F8F7F7"
+                android:scrollbars="vertical"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/sw_relay0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Relay 0"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <Switch
+                    android:id="@+id/sw_relay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Relay 1"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <Switch
+                    android:id="@+id/sw_relay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Relay 2"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <Switch
+                    android:id="@+id/sw_relay3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Relay 3"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_send_spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CDCCCC"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_receive_spi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFDFD"
+                android:scrollbars="vertical"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OPEN"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_send1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SEND CH0"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_send2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SEND CH1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLOSE"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#C1E4E4"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+            <Button
+                android:id="@+id/bt_open_spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OPEN SPI"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_tx0_spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="GetVer"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_rd0_spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="READ 0B "
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_wr0_spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WRITE 0B C7"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_close_spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLOSE SPI"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
